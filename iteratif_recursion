@@ -1,0 +1,9 @@
+deger=int(input("kac sayi gireceksiniz?:"))
+n1, n2 = 0, 1
+counted = 0
+while counted < deger:
+	print(n1)
+	new_number = n1 + n2
+	n1 = n2
+	n2 = new_number
+	counted += 1
