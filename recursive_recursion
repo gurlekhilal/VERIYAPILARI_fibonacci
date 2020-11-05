@@ -1,0 +1,14 @@
+def fibo(n):  
+   if n <= 1:  
+       return n  
+   else:  
+       return(fibo(n-1) + fibo(n-2))  
+# take input from the user  
+count = int(input("Kac deger alacaksınız?: "))  
+# check if the number of terms is valid  
+if count <= 0:  
+   print("Lütfen bu dizi için pozitif bir deger giriniz")  
+else:  
+   print("Fibonacci dizisi:")  
+   for i in range(count):  
+       print(fibo(i))
